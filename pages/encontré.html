@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Happy+Monkey&display=swap');</style>    
+    <link rel="stylesheet" href="../styles.css">
+    <title>Rescatando animales</title>
+    <meta name="author" content="Octavio Poggi" />
+    <meta name="description" content="Rescatando animales es una página web para reunir personas que rescatan animales callejeros y otras que los adopten, ademas se puede donar y ser voluntario.">
+    <link rel="icon" href="../img/favicon.ico" type="image/perrito" />
+</head>
+<body>
+    <!--Jumbotron inicio-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Rescatando ando</h1>
+          <p class="lead">Encontrá a tu amigo fiel y dale el amor que se merece.</p>
+        </div>
+    </div>
+    <!--NavBAr inicio-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-yellow">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">Volver a inicio!🐱</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Encontré una mascota!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="adoptar.html">Voy a agrandar la familia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ayuda">Quiero ayudar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <form action="submit.php" method="post">
+        <h2>Encontré Perro/Gato Formulario</h2>
+        <div>
+          <label for="pet-type">Tipo de mascota:</label>
+          <select id="pet-type" name="pet-type" required>
+            <option value="">--Seleccionar--</option>
+            <option value="dog">Perro</option>
+            <option value="cat">Gato</option>
+          </select>
+        </div>
+        <div>
+          <label for="pet-breed">Raza:</label>
+          <input type="text" id="pet-breed" name="pet-breed" required>
+        </div>
+        <div>
+          <label for="pet-age">Edad aproximada:</label>
+          <input type="number" id="pet-age" name="pet-age" required>
+        </div>
+        <div>
+          <label for="pet-gender">Género:</label>
+          <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+          <label for="pet-gender-male">Macho</label>
+          <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required>
+          <label for="pet-gender-female">Hembra</label>
+        </div>
+        <div>
+          <label for="pet-color">Color:</label>
+          <input type="text" id="pet-color" name="pet-color" required>
+        </div>
+        <div>
+          <label for="found-location">Lugar donde lo encontraste:</label>
+          <input type="text" id="found-location" name="found-location" required>
+        </div>
+        <div>
+          <label for="found-date">Fecha de rescate:</label>
+          <input type="date" id="found-date" name="found-date" required>
+        </div>
+        <div>
+          <label for="finder-name">Tu nombre:</label>
+          <input type="text" id="finder-name" name="finder-name" required>
+        </div>
+        <div>
+          <label for="finder-email">Tu Email:</label>
+          <input type="email" id="finder-email" name="finder-email" required>
+        </div>
+        <div>
+          <label for="finder-phone">Tu teléfono:</label>
+          <input type="tel" id="finder-phone" name="finder-phone" required>
+        </div>
+        <div>
+          <label for="pet-photo">Foto de la mascota:</label>
+          <input type="file" id="pet-photo" name="pet-photo" accept="image/*" required>
+        </div>
+        <div>
+          <label for="pet-description">Descripcion de la mascota:</label>
+          <textarea id="pet-description" name="pet-description" required></textarea>
+        </div>
+        <div>
+          <label for="agreement">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            Acepto los <a href="#">terminos y condiciones</a> de este formulario de adopcion.
+          </label>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      
+      
+      <footer class="bg-dark text-light py-3" id="contacto">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Acerca nuestro</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus molestie nulla, sit amet luctus lorem consequat in. Fusce in massa auctor, aliquam velit quis, fermentum tellus. Donec non velit non libero euismod faucibus a a arcu. </p>
+            </div>
+            <div class="col-md-3">
+              <h4>Contacto</h4>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: 1234 Andrés Baranda, BsAs ARG</li>
+                <li><i class="fas fa-envelope"></i> Email: info@adoptando.com</li>
+                <li><i class="fas fa-phone"></i> Teléfono: 555-555-1234</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Seguinos!</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+// Variable de color para NavBar
+$yellow: #ffd700;
+
+// Reemplazo de variable en Bootstrap
+$navbar-light-color: $yellow;
+$navbar-light-hover-color: $yellow;
+$navbar-light-active-color: $yellow;
+
+.jumbotron {
+    background-image: url('./img/Jumbotron.png');
+    background-size: auto;
+  background-position: center;
+  font-family: 'Happy Monkey', cursive;
+  margin-bottom: 0%;
+  }
+
+  .navbar {
+    background-color: $yellow;
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: transparent;
+      border-bottom: 2px solid #fff;
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+    border-radius: 2px;
+  }  
+
+
+// Formulario
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+
+    &:focus {
+      border-color: #0d6efd;
+      outline: none;
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  button[type="submit"] {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ffad00;
+    }
+  }
+
+  textarea {
+    height: 150px;
+  }
+}
+
+
+// Grilla de fotos
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .btn-primary {
+    background-color: #f2b705;
+    border-color: #f2b705;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #e0a006;
+      border-color: #e0a006;
+    }
+  }
+}
+
+// Center the collage
+.row {
+  justify-content: center;
+}
+
+// Set a max width for the container
+.container {
+  max-width: 960px;
+}
+
+//Video de rescate
+.rescue-video {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  iframe {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+//seccion voluntarios
+
+.volunteer-section {
+  padding: 80px 0;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button[type="submit"] {
+    margin-top: 20px;
+  }
+
+  img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+//footer
+
+.volunteer-section {
+  padding: 80px 0;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button[type="submit"] {
+    margin-top: 20px;
+  }
+
+  img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+//Donaciones
+.donation-section {
+  background-color: #f9f9f9;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .btn-donate {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    &:hover {
+      background-color: #ff9800;
+      border-color: #ff9800;
+    }
+  }
+}
